@@ -1,0 +1,43 @@
+.list {
+  list-style: none;
+  /* background-color: teal; */
+}
+.item {
+  display: flex;
+  border: 1px solid gray;
+  border-radius: 10px;
+  box-shadow: 3px 3px 1px gray;
+  width: 300px;
+  padding: 20px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.avatar {
+  display: block;
+}
+
+.isOnline {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: green;
+}
+.isOffline {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+/* .isOnline {
+  composes: status;
+  background-color: green;
+}
+
+.isOffline {
+  composes: status;
+  background-color: red;
+} */
