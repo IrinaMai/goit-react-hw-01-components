@@ -1,5 +1,6 @@
 import React from 'react';
-import './Statistic.css'
+import './Statistic.css';
+import PropTypes from 'prop-types';
 
 function randomColor(){
     var color = "";
@@ -29,3 +30,7 @@ function Statistic ({statistical}) {
 
 
 export default Statistic;
+
+Statistic.propTypes = {
+    statistical: PropTypes.arrayOf(PropTypes.object)
+}

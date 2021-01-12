@@ -8,7 +8,7 @@ th {
   width: 150px;
   text-align: start;
   font-weight: bold;
-  background-color: teal;
+  background-color: rgb(85, 87, 87);
   color: white;
 }
 td {
@@ -20,5 +20,5 @@ td {
   background-color: white;
 }
 .isEven {
-  background-color: rgb(163, 151, 151);
+  background-color: rgb(245, 236, 236);
 }

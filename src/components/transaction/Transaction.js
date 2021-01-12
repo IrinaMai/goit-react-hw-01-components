@@ -1,5 +1,6 @@
 import React from 'react';
-import style from './Transaction.module.css'
+import style from './Transaction.module.css';
+import PropTypes from 'prop-types';
 
 const isColored = (index) => {
     if (index % 2 === 0) {
@@ -38,3 +39,7 @@ const Transaction = ({ transactions }) => {
 };
 
 export default Transaction
+
+Transaction.propTypes = {
+   transactions: PropTypes.arrayOf(PropTypes.object),
+}
