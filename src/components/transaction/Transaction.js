@@ -1,10 +1,17 @@
 import React from 'react';
 import style from './Transaction.module.css'
 
+const isColored = (index) => {
+    if (index % 2 === 0) {
+        return style.isOdd
+    } else {
+        return style.isEven
+    }
+}
+
 const Transaction = ({ transactions }) => {
-    console.log({transactions})
     return (
-        <table className="style.transactionHistory">
+        <table className={style.transactionHistory}>
             <thead>
                 <tr>
                 <th>Type</th>
@@ -13,9 +20,10 @@ const Transaction = ({ transactions }) => {
                 </tr>
             </thead>
             <tbody>
-                {transactions.map(({id, type, amount, currency}) => {
+                {transactions.map(({ id, type, amount, currency }, index) => {
+                    
                     return (
-                    <tr key ={id}>
+                    <tr key ={id} index = "index" className = {isColored(index)} >
                         <td>{type}</td>
                         <td>{amount}</td>
                         <td>{currency}</td>

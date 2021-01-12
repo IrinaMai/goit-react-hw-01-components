@@ -1,3 +1,24 @@
 .transactionHistory {
-  background-color: blue;
+  border-collapse: collapse;
+  border: 1px solid grey;
+}
+th {
+  padding: 10px;
+  border: 1px solid grey;
+  width: 150px;
+  text-align: start;
+  font-weight: bold;
+  background-color: teal;
+  color: white;
+}
+td {
+  padding: 10px;
+  border: 1px solid grey;
+}
+
+.isOdd {
+  background-color: white;
+}
+.isEven {
+  background-color: rgb(163, 151, 151);
 }

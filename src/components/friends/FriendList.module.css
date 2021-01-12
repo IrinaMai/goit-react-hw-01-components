@@ -17,22 +17,15 @@
   display: block;
 }
 
+.status {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  /* background-color: green; */
+}
+
 .isOnline {
-  display: block;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: green;
-}
-.isOffline {
-  display: block;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: red;
-}
-
-/* .isOnline {
   composes: status;
   background-color: green;
 }
@@ -40,4 +33,4 @@
 .isOffline {
   composes: status;
   background-color: red;
-} */
+}
